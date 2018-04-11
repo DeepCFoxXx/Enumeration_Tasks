@@ -43,6 +43,15 @@ var ArrayTasks = {
     })
 
     return results
+  },
+
+  sumOfAllEvenNumbersSquared: function (arr) {
+    return arr.reduce(function (total, number) {
+      if (number % 2 === 0) {
+        return total + Math.pow(number, 2)
+      }
+      return total
+    }, 0)
   }
 
 }
