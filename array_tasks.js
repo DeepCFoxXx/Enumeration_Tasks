@@ -33,6 +33,16 @@ var ArrayTasks = {
     return arr.filter(function (item) {
       return item !== valueToRemove
     })
+  },
+
+  findIndexesOf: function (arr, itemToFind) {
+    var results = []
+
+    arr.forEach(function (item, index) {
+      if (item === itemToFind) results.push(index)
+    })
+
+    return results
   }
 
 }
