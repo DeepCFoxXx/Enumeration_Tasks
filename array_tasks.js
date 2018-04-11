@@ -4,16 +4,22 @@ var ArrayTasks = {
     return arr1.concat(arr2)
   },
 
-	insertAt: function (arr, itemToAdd, index) {
-		arr.splice(index, 0, itemToAdd)
-		return arr
-	},
+  insertAt: function (arr, itemToAdd, index) {
+    arr.splice(index, 0, itemToAdd)
+    return arr
+  },
 
-	square: function (arr) {
-		return arr.map(function (number) {
-			return number * number
-		})
-	}
+  square: function (arr) {
+    return arr.map(function (number) {
+      return number * number
+    })
+  },
+
+  sum: function (arr) {
+    return arr.reduce(function (total, number) {
+      return number + total
+    })
+  }
 
 }
 
