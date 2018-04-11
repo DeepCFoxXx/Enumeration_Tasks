@@ -19,6 +19,14 @@ var ArrayTasks = {
     return arr.reduce(function (total, number) {
       return number + total
     })
+  },
+
+  findDuplicates: function (arr) {
+    return arr.filter(function (item, i) {
+      var restOfArrayIncludesItem = arr.slice(i + 1).includes(item)
+      var isFirstInstanceOfItem = arr.indexOf(item) === i
+      return restOfArrayIncludesItem && isFirstInstanceOfItem
+    })
   }
 
 }

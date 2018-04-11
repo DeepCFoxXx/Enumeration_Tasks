@@ -25,4 +25,9 @@ describe('Array tasks', function () {
     assert.strictEqual(arrayTasks.sum(arr), 15)
   });
 
+  it('should find duplicate values in an array, returning a new array of the duplicates', function () {
+    var arr = [1, 2, 3, 4, 4, 5, 5, 5]
+    assert.deepStrictEqual(arrayTasks.findDuplicates(arr), [4, 5])
+  });
+
 });
