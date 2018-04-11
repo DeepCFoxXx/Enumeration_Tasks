@@ -7,6 +7,12 @@ var ArrayTasks = {
 	insertAt: function (arr, itemToAdd, index) {
 		arr.splice(index, 0, itemToAdd)
 		return arr
+	},
+
+	square: function (arr) {
+		return arr.map(function (number) {
+			return number * number
+		})
 	}
 
 }
