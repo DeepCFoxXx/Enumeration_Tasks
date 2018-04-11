@@ -27,6 +27,12 @@ var ArrayTasks = {
       var isFirstInstanceOfItem = arr.indexOf(item) === i
       return restOfArrayIncludesItem && isFirstInstanceOfItem
     })
+  },
+
+  removeAndClone: function (arr, valueToRemove) {
+    return arr.filter(function (item) {
+      return item !== valueToRemove
+    })
   }
 
 }
